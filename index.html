@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>MultiChain Tracker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Prompt:300,500,400,600");
+      
+      .wormhole-connect {
+        --wc-background: #ffffff;
+        --wc-primary: #182122;
+        --wc-secondary: #f4f4f6;
+        --wc-accent: #534fff;
+        --wc-error: #ff4f4f;
+        --wc-success: #ccf888;
+        --wc-text-primary: #182122;
+        --wc-text-secondary: #534fff;
+        --wc-text-tertiary: #6b7280;
+        --wc-border-radius: 10px;
+        --wc-font-family: 'Prompt', sans-serif;
+      }
+    </style>
+    <link href="tailwind.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://www.unpkg.com/@wormhole-foundation/wormhole-connect@0.0.1-alpha.8/dist/main.css">
+  </head>
+  <body>
+    <div id="app"></div>
+    <script src="https://www.unpkg.com/@wormhole-foundation/wormhole-connect@0.0.1-alpha.8/dist/main.js"></script>
+    <script type="module" src="./src/index.tsx"></script>
+  </body>
+</html>
