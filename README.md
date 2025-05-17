@@ -1,7 +1,4 @@
 # Multichain Tracker
-
-![Wormhole Integration](public/logo.svg)
-
 A dashboard for tracking cross-chain assets and transactions using Wormhole's interoperability protocols.
 
 ## Features
