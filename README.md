@@ -1,69 +1,94 @@
-# Multichain Tracker
-A dashboard for tracking cross-chain assets and transactions using Wormhole's interoperability protocols.
+# Xport - Cross-Chain NFT Trading Platform
+
+Xport is a modern web application that enables seamless cross-chain NFT purchases, allowing users to buy Solana NFTs using Ethereum USDC.
 
 ## Features
 
-- **Multi-chain Balance Overview**: View assets across Ethereum, Solana, and Polygon
-- **Network Fee Comparison**: Compare gas fees between chains
-- **Transaction History**: Track cross-chain transfers with WormholeScan verification
-- **Dark/Light Mode**: Tailwind CSS-powered theming
+- **Cross-Chain Bridging**: Bridge USDC from Ethereum to Solana using Wormhole
+- **NFT Marketplace Integration**: Purchase NFTs directly from Magic Eden
+- **Multi-Wallet Support**: Connect both Ethereum (MetaMask) and Solana (Phantom) wallets
+- **Real-Time Transaction Tracking**: Monitor bridge and purchase status with WormholeScan integration
+- **User Notifications**: Receive alerts when NFTs are successfully delivered
 
-## Tech Stack
+## Prerequisites
 
-- **Frontend**: Next.js 14 (App Router)
-- **Styling**: Tailwind CSS + PostCSS
-- **Charts**: Recharts
-- **Blockchain**: Wormhole SDK
-- **Types**: TypeScript
+- Node.js (v18 or higher)
+- MetaMask wallet extension
+- Phantom wallet extension
+- Test USDC on Ethereum Sepolia testnet
+- Some SOL on Solana devnet for transaction fees
 
+## Getting Started
 
-## Setup
-1. **Install dependencies**:
-   ```bash
-   npm install
-   ```
-2. **Environment variables**:
-    Create `.env` file:
-    ```ini
-    NEXT_PUBLIC_WORMHOLE_ENV=testnet
-    NEXT_PUBLIC_ETHEREUM_RPC=https://eth.llamarpc.com
-    ```
-3. **Run development server**:
-    ```bash
-    npm run dev
-    ```
+1. Install dependencies:
+```bash
+npm install
+```
 
-## Wormhole Integration
-This project uses:
+2. Start the development server:
+```bash
+npm run dev
+```
 
-- [Wormhole Connect](https://wormhole.com/wormhole-connect) for wallet management
+3. Open your browser and navigate to the provided local URL
 
-- [Wormhole SDK](https://github.com/wormhole-foundation/wormhole-sdk) for cross-chain data
+## Usage Flow
 
-- [WormholeScan](https://wormholescan.io/) for transaction verification
+1. **Connect Wallets**
+   - Click "Connect Wallets" to link both your Ethereum and Solana wallets
+   - Approve the connection requests in your wallet extensions
 
+2. **Select NFT**
+   - Browse available NFTs in the Magic Eden marketplace section
+   - Choose an NFT to purchase
 
+3. **Bridge & Purchase**
+   - Click "Purchase NFT" to initiate the transaction
+   - Approve the USDC transfer in MetaMask
+   - Wait for the bridging process to complete
+   - Confirm the NFT purchase transaction in Phantom
 
-## Scripts
-| Command         | Description               |
-|----------------|---------------------------|
-| `npm run dev`  | Start development server  |
-| `npm run build`| Create production build   |
-| `npm run lint` | Run ESLint                |
+4. **Confirmation**
+   - Receive a notification when your NFT arrives
+   - View transaction details on WormholeScan
+   - Check your Phantom wallet for the new NFT
+
+## Environment Setup
+
+Create a `.env` file with the following variables:
+```env
+VITE_MAGIC_EDEN_API_KEY=your_api_key
+VITE_INFURA_API_KEY=your_infura_key
+```
+
+## Development
+
+The project uses:
+- React with TypeScript
+- Vite for development and building
+- Tailwind CSS for styling
+- Wormhole SDK for cross-chain operations
+- Magic Eden API for NFT interactions
+
+## Testing
+
+The application is configured to work with:
+- Ethereum Sepolia testnet
+- Solana devnet
+- Wormhole testnet
+- Magic Eden devnet API
 
 ## Contributing
-- Fork the repository
 
-- Create a feature branch (`git checkout -b feature/foo`)
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Push to the branch
+5. Open a pull request
 
-- Commit changes (`git commit -am 'Add foo'`)
+## License
 
-- Push to branch (`git push origin feature/foo`)
-
-- Open a Pull Request
-
-## License 📄
-This project is licensed under the MIT License
+MIT License - see LICENSE file for details
 
 ## Contact Us
 - **X (Twitter):** [@thatbwoysammyj](https://x.com/thatbwoysammyj)  
